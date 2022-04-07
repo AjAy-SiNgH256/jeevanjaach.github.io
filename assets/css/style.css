@@ -1290,7 +1290,12 @@ blockquote span {
 .xs-banner-slider:hover .owl-next>* {
     opacity: 1
 }
-
+i.fa.fa-angle-right.xs-round-nav ,i.fa.fa-angle-left.xs-round-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .xs-banner-slider .active .xs-welcome-wraper h2, .xs-banner-slider .active .xs-welcome-wraper p, .xs-banner-slider .active .xs-welcome-wraper .xs-btn-wraper a {
     -webkit-animation: animLeft 1s ease 100ms both;
     animation: animLeft 1s ease 100ms both;
@@ -2467,9 +2472,9 @@ blockquote span {
 }
 
 .xs-funfact-list li {
-    display: inline-block;
     width: 25%;
-    float: left
+    float: left;
+    margin: 5px 15px;
 }
 
 .xs-funfact-list li p {
@@ -4867,4 +4872,23 @@ h1, h2, h3 {
     margin-left: 10px;
     font-size: 16px;
     color: #fff;
+}
+button.testimonial-btn {
+    position: absolute;
+    z-index: 9;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    border: 2px solid #000;
+    background: #fff;
+}
+button.testimonial-btn.testimonial-prev-btn.slick-arrow {
+    top: 50%;
+    left: -56px;
+    transform: translateY(-50%);
+}
+button.testimonial-btn.testimonial-next-btn.slick-arrow{
+    top: 50%;
+    right: -56px;
+    transform: translateY(-50%);
 }
