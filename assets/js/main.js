@@ -53,8 +53,8 @@ $(document).ready(function(){
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        prevArrow: '<button class="testimonial-btn testimonial-prev-btn"><i class="fa-arrow-left"></i></button>',
-        nextArrow: '<button class="testimonial-btn testimonial-next-btn"><i class="fa-arrow-right"></i></button>',
+        prevArrow: '<button class="testimonial-btn testimonial-prev-btn"><i class="fas fa-arrow-left slider-icons"></i></button>',
+        nextArrow: '<button class="testimonial-btn testimonial-next-btn"><i class="fas fa-arrow-right slider-icons"></i></button>',
         responsive: [
           {
             breakpoint: 1024,

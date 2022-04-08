@@ -10,6 +10,9 @@ body {
     overflow-x: hidden
 }
 
+.header-container{
+    max-width: 1300px;
+}
 iframe {
     border: none
 }
@@ -2232,7 +2235,7 @@ i.fa.fa-angle-right.xs-round-nav ,i.fa.fa-angle-left.xs-round-nav{
 
 .xs-single-journal .post-author {
     position: absolute;
-    bottom: -8px;
+    bottom: -24px;
     left: 0;
     width: 100%;
     padding: 0 24px;
@@ -4535,7 +4538,7 @@ svg {
 }
 
 .xs-bg-property, .header-transparent .nav-brand, .xs-box .nav-brand {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center
 }
@@ -4878,7 +4881,7 @@ button.testimonial-btn {
     z-index: 9;
     outline: none;
     cursor: pointer;
-    padding: 12px 20px;
+    padding: 16px 20px;
     border: 2px solid #000;
     background: #fff;
 }
@@ -4891,4 +4894,11 @@ button.testimonial-btn.testimonial-next-btn.slick-arrow{
     top: 50%;
     right: -56px;
     transform: translateY(-50%);
+}
+.slick-list{
+    padding: 20px;
+}
+.slider-icons{
+    font-size: 20px;
+    display: block;
 }
