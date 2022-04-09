@@ -4902,3 +4902,20 @@ button.testimonial-btn.testimonial-next-btn.slick-arrow{
     font-size: 20px;
     display: block;
 }
+.our-story-main-block p .span-1{
+    color: #ed1c24;
+    
+}
+.our-story-main-block .our-story-tagline{
+    font-size: 18px;
+}
+.our-story-image{
+    height: 100% !important;
+    object-fit: cover;
+}
+.footer-links li a{
+    transition: .3s;
+}
+.footer-links li a:hover{
+    color: #ed1c24;
+}
