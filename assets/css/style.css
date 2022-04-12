@@ -370,9 +370,9 @@ ul, li {
 }
 
 .xs-simple-tag li a {
-    font-size: .85714em;
+    font-size: 1.15em;
     color: #18bfc3;
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 
 .xs-simple-tag li a.color-light-red {
@@ -400,7 +400,7 @@ ul, li {
 }
 
 .xs-post-title {
-    font-size: 1.28571em;
+    font-size: 1.65em;
     font-weight: 600;
     color: #041d57;
     display: block;
@@ -1524,7 +1524,7 @@ i.fa.fa-angle-right.xs-round-nav ,i.fa.fa-angle-left.xs-round-nav{
 }
 
 .xs-item-content {
-    padding: 30px
+    padding: 20px;
 }
 
 .xs-item-content .xs-separetor {
@@ -4918,4 +4918,8 @@ button.testimonial-btn.testimonial-next-btn.slick-arrow{
 }
 .footer-links li a:hover{
     color: #ed1c24;
+}
+.page-width{
+    max-width: 1310px;
+    width: 95%;
 }
