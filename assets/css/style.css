@@ -5205,3 +5205,7 @@ select option[value=""][disabled] {
 .inverted-about-us-main-block{
     margin-top: 40px;
 }
+.donation-image-block img{
+    border-top-right-radius: 38px;
+    border-bottom-left-radius: 38px;
+}
