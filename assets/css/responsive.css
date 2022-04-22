@@ -9,6 +9,9 @@
 }
 
 @media(max-width:992px) {
+    .xs-title{
+        font-size: 2.28571em;
+    }
     .xs_nav-portrait .nav-logo>img{
         height: 80px;
     }
@@ -378,6 +381,9 @@
 }
 
 @media(max-width:767px) {
+    .accordion-heading {
+        font-size: 20px;
+    }    
     .inner .container {
         padding: 12rem 0 2rem;
     }
@@ -483,7 +489,9 @@
         right: -4px;
         z-index: -1;
     }
-    
+    .accordion-heading {
+        font-size: 18px;
+    }
     
 }
 @media(max-width:480px) {

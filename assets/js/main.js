@@ -83,5 +83,7 @@ $(document).ready(function () {
       }
     ]
   });
-
+  $('.accordion-item').on('click',function(){
+    $(this).find('.accordion-item-content').slideToggle(200);
+  });
 })

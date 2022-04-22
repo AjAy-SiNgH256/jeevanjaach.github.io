@@ -5209,3 +5209,46 @@ select option[value=""][disabled] {
     border-top-right-radius: 38px;
     border-bottom-left-radius: 38px;
 }
+.accordion-heading{
+    font-size: 22px;
+}
+.xs-separetor{
+    width: 35px;
+    margin-bottom: 19px;
+}
+.xs-title {
+    color: #041d57;
+    font-size: 3.28571em;
+    font-weight: 700;
+    letter-spacing: -.2px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 7px;
+}
+.accordion-heading{
+    color: #002147;
+}
+.accordion-item-content p {
+    font-size: 16px;
+}
+.accordion-item-trigger span img{
+    width: 15px;
+}
+.accordion-item-trigger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.accordion-item {
+    margin-bottom: 20px;
+    padding: 24px 30px 14px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 6px rgb(0 0 0 / 3%);
+    cursor: pointer;
+}
+.accordion-item-content{
+    display: none;
+    margin-top: 16px;
+}
