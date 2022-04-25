@@ -55,6 +55,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     prevArrow: false,
     nextArrow: false,
+    autoplay: true,
     // prevArrow: '<button class="testimonial-btn testimonial-prev-btn"><i class="fas fa-arrow-left slider-icons"></i></button>',
     // nextArrow: '<button class="testimonial-btn testimonial-next-btn"><i class="fas fa-arrow-right slider-icons"></i></button>',
     responsive: [
@@ -83,7 +84,22 @@ $(document).ready(function () {
       }
     ]
   });
-  $('.accordion-item').on('click',function(){
+  $('.accordion-item').on('click', function () {
     $(this).find('.accordion-item-content').slideToggle(200);
+  });
+  setTimeout(function () {
+    $('#event-modal').modal('show');
+  }, 3500);
+  var owl = $('.owl-carousel');
+    owl.owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true
+  });
+  $('.event-slot-btn').on('click',function(){
+    $(".event-slot-btn").removeClass("slot-active");
+    $(this).addClass("slot-active");
   });
 })
