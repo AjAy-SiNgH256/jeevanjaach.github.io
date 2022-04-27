@@ -14,7 +14,7 @@
 }
 
 .xs-heading .xs-title, .xs-round-btn:hover, .xs-post-title, .xs-avatar-title a, .xs-social-list.square li a, .square.xs-social-list-v2 li a, .xs-social-list.square li a, .square.xs-social-list-v2 li a .xs-social-list.simple li a, .simple.xs-social-list-v2 li a, .xs-countdown-timer .timer-count, .xs-pagination li a, .xs-causes-footer, .xs-list-with-content li, .xs-list-with-content li span.number-percentage-count, .xs-about-feature h3, .xs-fature-causes-deatils h3, .xs-service-promo h5, .xs-volunteer-form-wraper.volunteer-version-2 h2, .xs-volunteer-form-wraper.volunteer-version-3 h2, .xs-single-journal .entry-title a, .xs-archive-content h5, .xs-funfact-list li p .number-percentage-count, .xs-children-details a, .xs-donation-form label, .xs-single-media h5, .xs-single-media a, .xs-nav-pills li a, .xs-tab-content h5, .xs-event-content h4, .xs-list-group li, .xs-event-schedule-widget .widget-title, .xs-horizontal-tabs .nav-tabs .nav-item .nav-link, .xs-blog-post-details .xs-unorder-list li:before, .xs-post-entry-title a, .entry-sub-title, .xs-post-sub-heading, .xs-post-author-details a, .post-navigation a h5, .xs-blog-post-comment .comments-title, .xs-blog-post-comment .comment-meta .comment-author b, .xs-blog-post-comment .comment-respond .comment-reply-title, .xs-sidebar-widget .widget-title, .xs-sidebar-widget .xs-recent-post-widget .entry-title a, .color-navy-blue, .xs-event-content a:not(.btn), .btn-secondary.btn-color-alt {
-    color: #3d434d !important;
+    color: #041d57 !important;
     transition: all .4s ease
 }
 

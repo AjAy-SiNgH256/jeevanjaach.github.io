@@ -5335,7 +5335,10 @@ select option[value=""][disabled] {
     align-items: center;
 
 }
-
+.image-active-accordian{
+    transform: rotate(180deg);
+    transition: all .2s linear;
+}
 .accordion-item {
     margin-bottom: 20px;
     padding: 24px 30px 14px;
@@ -5386,7 +5389,7 @@ select option[value=""][disabled] {
 }
 
 .event-slot-btn {
-    border: 1px solid #000;
+    border: 2px solid #000;
     background: transparent;
     border-radius: 32px;
     padding: 10px 26px;
@@ -5394,6 +5397,7 @@ select option[value=""][disabled] {
     cursor: pointer;
     outline: none;
     transition: .2s;
+    font-weight: 500;
 }
 .event-slot-btn:hover{
     color: #fff;
@@ -5631,3 +5635,4 @@ select option[value=""][disabled] {
     color: #e62222;
     font-size: 16px;
 }
+

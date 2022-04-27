@@ -58,7 +58,7 @@ $(document).ready(function () {
   });
   $('.testimonial-slider').slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: false,
@@ -72,7 +72,7 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: false,
+          infinite: true,
           dots: false
         }
       },
@@ -94,6 +94,7 @@ $(document).ready(function () {
   });
   $('.accordion-item').on('click', function () {
     $(this).find('.accordion-item-content').slideToggle(200);
+    $(this).find('.accordion-item-trigger span img').toggleClass('image-active-accordian');
   });
   setTimeout(function () {
     $('#event-modal').modal('show');
@@ -103,4 +104,5 @@ $(document).ready(function () {
     $(".event-slot-btn").removeClass("slot-active");
     $(this).addClass("slot-active");
   });
+  AOS.init();
 })
