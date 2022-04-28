@@ -22,11 +22,11 @@
 }
 @media(max-width:992px) {
     .testimonial-main-bg {
-        background-color: #f9d0c4;
+        background-color: #93eba6bd;
         clip-path: ellipse(160% 100% at 50% 0%);
     }
     .faq-main-bg, .courses-main-bg {
-        background-color: #f9d0c4;
+        background-color: #93eba6bd;
         clip-path: ellipse(172% 100% at 50.85% 100%);
     }
     .nav-toggle {
@@ -408,7 +408,7 @@
 
 @media(max-width:767px) {
     .faq-main-bg, .courses-main-bg {
-        background-color: #f9d0c4;
+        background-color: #93eba6bd;
         clip-path: ellipse(242% 100% at 50.85% 100%);
     }
     .nav-toggle {
@@ -494,7 +494,7 @@
 }
 @media only screen and (max-width:600px){
     .testimonial-main-bg {
-        background-color: #f9d0c4;
+        background-color: #93eba6bd;
         clip-path: ellipse(190% 100% at 50% 0%);
     }
     .entry-meta h5 {
