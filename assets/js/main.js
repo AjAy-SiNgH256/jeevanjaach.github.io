@@ -61,6 +61,7 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    speed: 300,
     prevArrow: false,
     nextArrow: false,
     autoplay: true,

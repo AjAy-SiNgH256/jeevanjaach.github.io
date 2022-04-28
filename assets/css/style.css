@@ -1217,7 +1217,8 @@ blockquote span {
 
 .xs-welcome-wraper {
     position: relative;
-    z-index: 1
+    z-index: 1;
+    text-align: right;
 }
 
 .xs-welcome-wraper h2 {
@@ -1309,7 +1310,9 @@ i.fa.fa-angle-right.xs-round-nav, i.fa.fa-angle-left.xs-round-nav {
 }
 
 .xs-banner-slider .active .xs-welcome-wraper p {
-    padding: 0 45px;
+    max-width: 600px;
+    margin: 0 0 0 auto;
+    padding-bottom: 30px;
     -webkit-animation-delay: 500ms;
     animation-delay: 500ms
 }
@@ -5417,7 +5420,7 @@ select option[value=""][disabled] {
 }
 
 .testimonial-main-bg, .faq-main-bg {
-    background-color: #f9d0c4;
+    background-color: #93eba6bd;
     clip-path: ellipse(120% 100% at 50% 0%);
 }
 
@@ -5426,7 +5429,7 @@ select option[value=""][disabled] {
 }
 
 .faq-main-bg, .courses-main-bg {
-    background-color: #f9d0c4;
+    background-color: #93eba6bd;
     clip-path: ellipse(135% 100% at 50.85% 100%);
 }
 
