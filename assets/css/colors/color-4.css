@@ -19,16 +19,16 @@
 }
 
 .bg-navy-blue, .bg-aqua, .xs-separetor.v3::before, .xs-separetor.v3::after, .btn-primary:hover:before, .btn-primary:hover:after, .btn-secondary, .btn-secondary:hover, .xs-social-list li a:hover, .xs-social-list-v2 li a:hover, .xs-round-nav:hover, .xs-countdown-timer.timer-style-2, .xs-contact-container, .xs-newsletter-form [type=submit], .xs-widnow-wraper.active .xs-window-nav .xs-window-opener, .xs-evnet-meta-date, .xs-blog-post-details .post-meta-date {
-    background-color: #3d434d !important;
+    background-color: #7edf65 !important;
     transition: all .4s ease
 }
 
 .btn-secondary.btn-color-alt:hover {
-    background-color: #3d434d !important
+    background-color: #7edf65 !important
 }
 
 .entry-content blockquote {
-    background: #3d434d !important;
+    background: #7edf65 !important;
     transition: all .4s ease
 }
 

@@ -5342,6 +5342,9 @@ select option[value=""][disabled] {
     transform: rotate(180deg);
     transition: all .2s linear;
 }
+.accordian-arrow{
+    transition: all .2s linear;
+}
 .accordion-item {
     margin-bottom: 20px;
     padding: 24px 30px 14px;
