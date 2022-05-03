@@ -51,10 +51,10 @@ $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
   var owl = $(".owl-carousel");
   owl.owlCarousel({
-      loop:true,
-      autoplaySpeed:1000,
-      items:2,
-      autoplay:true
+    loop: true,
+    autoplaySpeed: 1000,
+    items: 2,
+    autoplay: true
   });
   $('.testimonial-slider').slick({
     dots: false,
@@ -100,10 +100,34 @@ $(document).ready(function () {
   setTimeout(function () {
     $('#event-modal').modal('show');
   }, 3500);
-  
-  $('.event-slot-btn').on('click',function(){
+
+  $('.event-slot-btn').on('click', function () {
     $(".event-slot-btn").removeClass("slot-active");
     $(this).addClass("slot-active");
   });
   AOS.init();
+
+  var timeout;
+  $('.parallax-wrap').mousemove(function (e) {
+    if (timeout) clearTimeout(timeout);
+    setTimeout(callParallax.bind(null, e), 200);
+
+  });
+
+  function callParallax(e) {
+    parallaxIt(e, '.slide h2', -100);
+    parallaxIt(e, '.parallax-wrap img', -30);
+  }
+
+  function parallaxIt(e, target, movement) {
+    var $this = $('.parallax-wrap');
+    var relX = e.pageX - $this.offset().left;
+    var relY = e.pageY - $this.offset().top;
+
+    TweenMax.to(target, 1, {
+      x: (relX - $this.width() / 2) / $this.width() * movement,
+      y: (relY - $this.height() / 2) / $this.height() * movement,
+      ease: Power2.easeOut
+    })
+  }
 })

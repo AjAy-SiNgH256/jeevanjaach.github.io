@@ -543,21 +543,32 @@
     .xs-welcome-wraper{
         text-align: center;
     }
+    .collab-button{
+        --fs-size: 1.15em;
+    }
 }
 @media(max-width:480px) {
     html {
         font-size: 65%
     }
     .courses-main-bg {
-        background-color: #f9d0c4;
+        background-color: #93eba6bd;
         clip-path: ellipse(285% 100% at 50.85% 100%);
     }
     .faq-main-bg{
-        background-color: #f9d0c4;
+        background-color: #93eba6bd;
         clip-path: ellipse(220% 100% at 50.85% 100%);
     }
 }
-
+@media only screen and (max-width:440px){
+    .xs-btn-wraper a {
+        margin-right: 0;
+    }
+    .xs-btn-wraper {
+        display: flex;
+        flex-direction: column;
+    }
+}
 @media(max-width:320px) {
     html {
         font-size: 60.5%

@@ -12,7 +12,9 @@
 
 	<link rel="apple-touch-icon" href="apple-touch-icon.html">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/xsIcon.css">
 	<link rel="stylesheet" href="assets/css/isotope.css">
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
@@ -77,7 +79,7 @@
 					<div class="col-lg-7">
 						<ul class="nav-menu">
 							<li><a href="index.html" class="navbar-items">Home</a></li>
-							<li><a href="about.html" class="navbar-items">Vision and Mission</a></li>
+							<li><a href="javascript:void(0)" class="navbar-items">Q & A</a></li>
 
 							<li><a href="#" class="navbar-items">Webinars</a>
 								<ul class="nav-dropdown">
@@ -106,12 +108,19 @@
 		</div>
 	</header>
 
+	<!-- <div class="parallax-wrap">
+		<img src="https://unsplash.it/1000/1000?random=" />
+		<div class="slide one">
+			<h2>Parallax Effect</h2>
+		</div>
+	</div> -->
+
 	<section class="xs-welcome-slider">
 		<div class="xs-banner-slider owl-carousel">
 			<div class="xs-welcome-content" style="background-image: url(assets/images/slider/slider_1.jpg);">
 				<div class="container">
 					<div class="xs-welcome-wraper color-white">
-						<h2>SANGEET JAACH</h2>
+						<h2>GURMAT SANGEET</h2>
 						<p>We teach the Punjabi language - spoken and in the written form in the Gurmukhi script. Our
 							classes also include teaching a way of life to our students. We impart knowledge about
 							Gurbani too.</p>
@@ -131,7 +140,7 @@
 			<div class="xs-welcome-content" style="background-image: url(assets/images/slider/slider_2.jpg);">
 				<div class="container">
 					<div class="xs-welcome-wraper color-white">
-						<h2>GURMAT JAACH</h2>
+						<h2 style="text-transform: uppercase;">Basic Gurmukhi & Gurbani Course</h2>
 						<p></p>
 						<div class="xs-btn-wraper">
 							<a href="#" class="btn btn-outline-primary">
@@ -167,9 +176,47 @@
 			<div class="xs-welcome-content" style="background-image: url(assets/images/slider/slider_4.jpg);">
 				<div class="container">
 					<div class="xs-welcome-wraper color-white">
-						<h2>GURBANI & SPIRITUAL JAACH</h2>
-						<p></p>
-						<div class="xs-btn-wraper">
+						<h2 style="text-transform: uppercase;">Online Consultation</h2>
+						<p class="consultation-para">Are you seeking help?</p>
+						<p class="consultation-para">Are you struggling with your Mental Health? Rest assured.</p>
+						<p class="consultation-para">Jeevan Jaach Counselling Cell is here for you!</p>
+						<div class="xs-btn-wraper consulation-touch-btn">
+							<a href="#" class="btn btn-outline-primary">
+								Get in Touch
+							</a>
+							<!-- <a href="https://www.iobnet.co.in/iobpay/entry.do?dirlinkcatcd=CHA&dirlinkmerid=JJTMUM"
+								class="btn btn-primary">
+								<span class="badge"><i class="fa fa-heart"></i></span> Donate Now
+							</a> -->
+						</div>
+					</div>
+				</div>
+				<div class="xs-black-overlay"></div>
+			</div>
+			<div class="xs-welcome-content" style="background-image: url(assets/images/slider/slider_4.jpg);">
+				<div class="container">
+					<div class="xs-welcome-wraper color-white">
+						<h2 style="text-transform: uppercase;">Collaborators</h2>
+						<ul>
+							<li>
+								<a href="https://www.khalsaaid.org/" target="_blank"><button class="collab-button" data-text="Awesome">
+										<span class="actual-text">&nbsp;KHALSA AID&nbsp;</span>
+									</button></a>
+							</li>
+							<li>
+								<a href="http://www.thelivingtreasure.com/" target="_blank"><button class="collab-button"
+										data-text="Awesome">
+										<span class="actual-text">&nbsp;THE LIVING TREASURE&nbsp;</span>
+									</button></a>
+							</li>
+							<li>
+								<a href="https://sikhwisdom.org/" target="_blank"><button class="collab-button" data-text="Awesome">
+										<span class="actual-text">&nbsp;SIKH WISDOM&nbsp;</span>
+									</button></a>
+							</li>
+
+						</ul>
+						<div class="xs-btn-wraper collab-btn-main-block">
 							<a href="#" class="btn btn-outline-primary">
 								Enroll Now
 							</a>
@@ -288,6 +335,17 @@
 							</li>
 							<div class="clearfix"></div>
 						</ul>
+						<div class="our-story-read-more-btn">
+							<a href="about.html">
+								<button class="read-more-btn">
+									<span>Read More</span>
+									<svg viewBox="0 0 13 10" height="10px" width="15px">
+										<path d="M1,5 L11,5"></path>
+										<polyline points="8 1 12 5 8 9"></polyline>
+									</svg>
+								</button>
+							</a>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-6">
@@ -352,7 +410,21 @@
 			</div>
 		</div>
 	</section>
-
+	<section class="announcement-main-bg waypoint-tigger xs-section-padding" data-aos="fade-up">
+		<div class="container page-width">
+			<div class="announcement-main-block">
+				<div class="announcement-header col-md-9 col-xl-9">
+					<h2 class="xs-title">Announcement</h2>
+					<span class="xs-separetor dashed"></span>
+				</div>
+				<div class="announcement-image-main-block">
+					<div class="col-md-8">
+						<img src="assets/images/Admissions-Open.png" alt="image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section class="xs-section-padding" data-aos="fade-right">
 		<div class="container page-width">
 			<div class="row">
@@ -363,10 +435,7 @@
 							today, we have handled over 3,000 students, and we are working with more than 50 teachers.
 							Additionally, we have a backend team that includes a social media team, a website team, and
 							a resource team working with us. All this in just a span of one year!</p>
-						<!-- <blockquote>
-							If you don't understand how fast and easy it is to so long for your favorite charity on
-							FundPress, please try it. <span>How it works</span> page, <span>Contact us</span>.
-						</blockquote> -->
+
 						<a href="https://www.iobnet.co.in/iobpay/entry.do?dirlinkcatcd=CHA&dirlinkmerid=JJTMUM"
 							target="_blank" class="btn btn-primary">
 							<span class="badge"><i class="fa fa-heart"></i></span> Donate Now
@@ -380,104 +449,13 @@
 		</div>
 	</section>
 
-	<!-- <section class="bg-navy-blue">
-		<div class="container-fulid">
-			<div class="xs-feature-content">
-				<h2 class="color-white">CharityPress are <span> charity </span> activities are taken place around the
-					world, lets contribute.</h2>
-			</div>
-		</div>
-	</section>
-
-	<section class="xs-feature-box-fulid">
-		<div class="container-fulid">
-			<div class="row xs-feature-box-wraper">
-				<div class="col-md-12 col-lg-4 xs-feature-box">
-					<div class="xs-feature-box-content">
-						<h3 class="color-white">But we're not done yet. We need your.</h3>
-						<a href="volunteer.html" class="btn btn-secondary btn-color-alt">
-							get involved
-						</a>
-					</div>
-				</div>
-				<div class="col-md-12 col-lg-4 xs-feature-box highlight">
-					<div class="xs-feature-box-content">
-						<h3 class="color-white">Sponsor an entire trending project</h3>
-						<p>For $10,000 or more you can fully fund a water project for a Community. 100% funds clean
-							water projects. 663 million people drink.</p>
-						<a href="#" class="btn btn-secondary btn-color-alt">
-							Become an Sponsor
-						</a>
-					</div>
-				</div>
-				<div class="col-md-12 col-lg-4 xs-feature-box">
-					<div class="xs-feature-box-content">
-						<h3 class="color-white">Connect with us on social media</h3>
-						<ul class="xs-social-list">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-							
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-
-
-	<!-- <section class="parallax-window xs-become-a-volunteer xs-section-padding"
-		style="background-image: url('assets/images/backgrounds/volunteer-bg.jpg')">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-lg-7">
-					<div class="xs-volunteer-form-wraper bg-aqua">
-						<h2>Become a Volunteer</h2>
-						<p>It only takes a minute to set up a campaign. Decide what to do. Pick a name. Pick a photo.
-							And just like that, you’ll be ready to start raising money.</p>
-						<form action="#" method="POST" id="volunteer-form" class="xs-volunteer-form">
-							<div class="row">
-								<div class="col-lg-6">
-									<input type="text" id="volunteer_name" class="form-control" placeholder="Your Name">
-								</div>
-								<div class="col-lg-6">
-									<input type="email" id="volunteer_email" class="form-control"
-										placeholder="Your Email">
-								</div>
-								<div class="col-lg-6">
-									<select name="branch" class="form-control" id="volunteer_brach">
-										<option value="">Select</option>
-										<option value="">Branch</option>
-										<option value="">New york</option>
-										<option value="">washington</option>
-									</select>
-								</div>
-								<div class="col-lg-6 xs-mb-20">
-									<div class="xs-fileContainer">
-										<input type="file" id="volunteer_cv" class="form-control" name="file">
-										<label for="volunteer_cv">Upload Your CV</label>
-									</div>
-								</div>
-							</div>
-							<textarea name="massage" id="massage" placeholder="Enter your massage" cols="30"
-								class="form-control" rows="10"></textarea>
-							<button type="submit" class="btn btn-secondary btn-color-alt">apply now</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
 	<section class="xs-section-padding testimonial-main-bg" data-aos="fade-up">
 		<div class="container page-width">
 			<div class="xs-heading row xs-mb-60">
 				<div class="col-md-9 col-xl-9">
 					<h2 class="xs-title">Testimonial</h2>
 					<span class="xs-separetor dashed"></span>
-
 				</div>
-
 			</div>
 			<div class="row testimonial-slider">
 				<div class="col-lg-4 col-md-6">
@@ -802,8 +780,6 @@
 	</section>
 
 
-
-
 	<!--FAQ section start-->
 	<section class="xs-section-padding faq-main-bg" data-aos="fade-up">
 		<div class="section-faq container page-width">
@@ -820,7 +796,8 @@
 								<h4 class="accordion-heading"><strong>Are these live classes or video tapped recordings
 										will
 										be shared?</strong></h4>
-								<span><img src="assets/images/FAQ/arrow-down-sign-to-navigate.png" class="accordian-arrow" alt="icon"></span>
+								<span><img src="assets/images/FAQ/arrow-down-sign-to-navigate.png"
+										class="accordian-arrow" alt="icon"></span>
 							</div>
 							<div class="accordion-item-content">
 								<p>We have a team of experienced teachers who have volunteered to take the live classes
@@ -831,7 +808,8 @@
 							<div id="q1" class="accordion-item-trigger">
 								<h4 class="accordion-heading"><strong>I am not from India, can I attend these
 										classes?</strong></h4>
-								<span><img src="assets/images/FAQ/arrow-down-sign-to-navigate.png" class="accordian-arrow" alt="icon"></span>
+								<span><img src="assets/images/FAQ/arrow-down-sign-to-navigate.png"
+										class="accordian-arrow" alt="icon"></span>
 							</div>
 							<div class="accordion-item-content">
 								<p>We have been accommodating learners from many parts of the world like USA, UK,
@@ -843,7 +821,8 @@
 						<div class="accordion-item">
 							<div id="q1" class="accordion-item-trigger">
 								<h4 class="accordion-heading"><strong>Do I need to buy any study material?</strong></h4>
-								<span><img src="assets/images/FAQ/arrow-down-sign-to-navigate.png" class="accordian-arrow" alt="icon"></span>
+								<span><img src="assets/images/FAQ/arrow-down-sign-to-navigate.png"
+										class="accordian-arrow" alt="icon"></span>
 							</div>
 							<div class="accordion-item-content">
 								<p>All study resources will be provided by us digitally.</p>
@@ -852,7 +831,8 @@
 						<div class="accordion-item">
 							<div id="q1" class="accordion-item-trigger">
 								<h4 class="accordion-heading"><strong>Will I get the timings I select?</strong></h4>
-								<span><img src="assets/images/FAQ/arrow-down-sign-to-navigate.png" class="accordian-arrow" alt="icon"></span>
+								<span><img src="assets/images/FAQ/arrow-down-sign-to-navigate.png"
+										class="accordian-arrow" alt="icon"></span>
 							</div>
 							<div class="accordion-item-content">
 								<p>The timings will be decided as per the teams’ discretion. Choose from the options
@@ -865,7 +845,8 @@
 								<h4 class="accordion-heading"><strong>Do you offer Sangeet or Instruments
 										classes?</strong>
 								</h4>
-								<span><img src="assets/images/FAQ/arrow-down-sign-to-navigate.png" class="accordian-arrow" alt="icon"></span>
+								<span><img src="assets/images/FAQ/arrow-down-sign-to-navigate.png"
+										class="accordian-arrow" alt="icon"></span>
 							</div>
 							<div class="accordion-item-content">
 								<p>We have taken the initiative to introduce Gurmat sangeet classes in order to support
@@ -877,7 +858,8 @@
 						<div class="accordion-item">
 							<div id="q1" class="accordion-item-trigger">
 								<h4 class="accordion-heading"><strong>Who can enroll?</strong></h4>
-								<span><img src="assets/images/FAQ/arrow-down-sign-to-navigate.png" class="accordian-arrow" alt="icon"></span>
+								<span><img src="assets/images/FAQ/arrow-down-sign-to-navigate.png"
+										class="accordian-arrow" alt="icon"></span>
 							</div>
 							<div class="accordion-item-content">
 								<p>Anyone who wants to learn Gurmukhi & Gurbani regardless of Age, Gender, Religion,
@@ -955,7 +937,6 @@
 	<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="assets/js/plugins.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/isotope.pkgd.min.js"></script>
 	<script src="assets/js/jquery.magnific-popup.min.js"></script>
 	<script src="assets/js/owl.carousel.min.js"></script>
@@ -969,6 +950,9 @@
 		integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>

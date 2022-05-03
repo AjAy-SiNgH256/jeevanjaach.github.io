@@ -4741,55 +4741,57 @@ svg {
 }
 
 .color-navy-blue {
-    color: #041d57
+    color: #041d57;
 }
 
 .color-aqua {
-    color: #18bfc3
+    color: #18bfc3;
 }
 
 .color-white {
-    color: #fff
+    color: #fff;
+    max-width: 880px;
+    margin: 0 0 0 auto;
 }
 
 .color-green {
-    color: #3ac798
+    color: #3ac798;
 }
 
 .color-light-red {
-    color: #fa575d
+    color: #fa575d;
 }
 
 .color-purple {
-    color: #9064bf
+    color: #9064bf;
 }
 
 .color-light-green {
-    color: #2cc391
+    color: #2cc391;
 }
 
 .color-orange {
-    color: #f7a900
+    color: #f7a900;
 }
 
 .color-blue {
-    color: #369ff4
+    color: #369ff4;
 }
 
 .color-burntOrange {
-    color: #fe813a
+    color: #fe813a;
 }
 
 .color-riptide {
-    color: #8ed4cc
+    color: #8ed4cc;
 }
 
 .color-bondiBlue {
-    color: #079bbb
+    color: #079bbb;
 }
 
 .color-yellow {
-    color: #ffca0a
+    color: #ffca0a;
 }
 
 .bg-gray {
@@ -4997,7 +4999,7 @@ button.testimonial-btn.testimonial-next-btn.slick-arrow {
 }
 
 .our-story-main-block p .span-1 {
-    color: #ed1c24;
+    color: #1ed670;
 
 }
 
@@ -5338,13 +5340,16 @@ select option[value=""][disabled] {
     align-items: center;
 
 }
-.image-active-accordian{
+
+.image-active-accordian {
     transform: rotate(180deg);
     transition: all .2s linear;
 }
-.accordian-arrow{
+
+.accordian-arrow {
     transition: all .2s linear;
 }
+
 .accordion-item {
     margin-bottom: 20px;
     padding: 24px 30px 14px;
@@ -5405,10 +5410,12 @@ select option[value=""][disabled] {
     transition: .2s;
     font-weight: 500;
 }
-.event-slot-btn:hover{
+
+.event-slot-btn:hover {
     color: #fff;
     background: #000;
 }
+
 .event-slot-block-items {
     margin-bottom: 32px;
 }
@@ -5642,3 +5649,135 @@ select option[value=""][disabled] {
     font-size: 16px;
 }
 
+/*Our story readmore btn*/
+.read-more-btn {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.our-story-read-more-btn {
+    margin-top: 20px;
+}
+
+.read-more-btn:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn span {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: #041d57;
+}
+
+.read-more-btn svg {
+    position: relative;
+    top: -2px;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.read-more-btn:hover svg {
+    transform: translateX(0);
+}
+
+.read-more-btn:active {
+    transform: scale(0.95);
+}
+
+.announcement-image-main-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.parallax-wrap {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.parallax-wrap img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .consultation-para{
+      padding-bottom: 12px !important;
+  }
+  .consulation-touch-btn{
+      margin-top: 30px;
+  }
+  .collab-btn-main-block{
+      margin-top: 38px;
+  }
+  .collab-button {
+    margin: 0;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .collab-button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 1.8em;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  button.collab-button {
+    border-right: 4px solid #37FF8B;
+    margin: 8px 0;
+}
