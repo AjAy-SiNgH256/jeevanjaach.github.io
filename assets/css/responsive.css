@@ -56,9 +56,6 @@
     html {
         font-size: 90%
     }
-    .inner {
-        min-width: 768px; 
-      }
     .xs-btn-wraper a, .xs-archive-content, .xs-archive-image img, .xs-text-content, .xs-feature-image, .xs-service-promo, .xs-event-image, .xs-partner-content, .xs-single-journal, .footer-widget, .xs-feature-text-content, .xs-feature-image-box.image-1, .xs-single-funFact-v3, .xs-about-feature, .xs-single-funFact, .xs-single-team, .xs-event-schedule-widget .widget-title, .xs-event-wraper, .xs-post-footer .post-tags, .xs-single-children, .xs-nav-pills, .xs-single-pricing-table, .xs-volunteer-form-wraper.volunteer-version-2, .xs-contact-section-v2 .xs-contact-form-wraper, .xs-contact-details, .nav-menu {
         margin-bottom: 30px
     }

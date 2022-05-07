@@ -99,7 +99,8 @@
 						</ul>
 					</div>
 					<div class="xs-navs-button d-flex-center-end col-lg-3">
-						<a href="login.html" class="btn btn-primary">
+						<a href="javascript:void(0)" class="btn btn-primary" data-toggle="modal"
+							data-target="#login-modal">
 							<span class="badge"><i class="fa fa-user"></i></span> Login / Sign Up
 						</a>
 					</div>
@@ -199,18 +200,20 @@
 						<h2 style="text-transform: uppercase;">Collaborators</h2>
 						<ul>
 							<li>
-								<a href="https://www.khalsaaid.org/" target="_blank"><button class="collab-button" data-text="Awesome">
+								<a href="https://www.khalsaaid.org/" target="_blank"><button class="collab-button"
+										data-text="Awesome">
 										<span class="actual-text">&nbsp;KHALSA AID&nbsp;</span>
 									</button></a>
 							</li>
 							<li>
-								<a href="http://www.thelivingtreasure.com/" target="_blank"><button class="collab-button"
-										data-text="Awesome">
+								<a href="http://www.thelivingtreasure.com/" target="_blank"><button
+										class="collab-button" data-text="Awesome">
 										<span class="actual-text">&nbsp;THE LIVING TREASURE&nbsp;</span>
 									</button></a>
 							</li>
 							<li>
-								<a href="https://sikhwisdom.org/" target="_blank"><button class="collab-button" data-text="Awesome">
+								<a href="https://sikhwisdom.org/" target="_blank"><button class="collab-button"
+										data-text="Awesome">
 										<span class="actual-text">&nbsp;SIKH WISDOM&nbsp;</span>
 									</button></a>
 							</li>
@@ -281,6 +284,82 @@
 		</div>
 	</div>
 	<!--Event Modal End-->
+
+
+	<!--Login Modal Start-->
+	<!-- Modal -->
+	<div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered login-form-dialog">
+			<div class="modal-content">
+				<div class="modal-body login-modal-body">
+					<div class="inner">
+						<div class="container">
+							<div class="tab-switch-main-block">
+								<div class="tab-switch-block-items active-tab" data-id="login-form">
+									Login
+								</div>
+								<div class="tab-switch-block-items" data-id="sign-up-form">
+									Sign Up
+								</div>
+							</div>
+							<form action="" class="portal active-portal" data-id="login-form">
+			
+								<div class="form-group">
+								
+								</div>
+								<div class="form-wrapper">
+									<label for="">Email</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="form-wrapper">
+									<label for="">Password</label>
+									<input type="password" class="form-control">
+								</div>
+						
+								<div class="checkbox">
+									<label class="checkbox-container">
+										<input type="checkbox"> I accept the Terms of Use & Privacy Policy.
+										<div class="checkmark"></div>
+									</label>
+								</div>
+								<button class="login-btn">Sign In</button>
+							</form>
+							<form action="" class="portal" data-id="sign-up-form">
+			
+								<div class="form-group">
+									<div class="form-wrapper">
+										<label for="">First Name</label>
+										<input type="text" class="form-control">
+									</div>
+									<div class="form-wrapper">
+										<label for="">Last Name</label>
+										<input type="text" class="form-control">
+									</div>
+								</div>
+								<div class="form-wrapper">
+									<label for="">Email</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="form-wrapper">
+									<label for="">Password</label>
+									<input type="password" class="form-control">
+								</div>
+
+								<div class="checkbox">
+									<label class="checkbox-container">
+										<input type="checkbox"> I accept the Terms of Use & Privacy Policy.
+										<div class="checkmark"></div>
+									</label>
+								</div>
+								<button class="login-btn">Register Now</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Login Modal End-->
 
 	<section class="waypoint-tigger xs-section-padding" data-aos="fade-up">
 		<div class="container">

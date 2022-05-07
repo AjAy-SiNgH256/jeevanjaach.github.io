@@ -130,4 +130,11 @@ $(document).ready(function () {
       ease: Power2.easeOut
     })
   }
+  $('.tab-switch-block-items').on('click', function () {
+    let tabId = $(this).attr('data-id');
+    $('.portal').removeClass('active-portal');
+    $('.portal[data-id="' + tabId + '"]').addClass('active-portal');
+    $('.tab-switch-block-items').removeClass('active-tab');
+    $(this).addClass('active-tab');
+  });
 })

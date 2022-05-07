@@ -5042,15 +5042,19 @@ button.testimonial-btn.testimonial-next-btn.slick-arrow {
 
 .inner {
     margin: auto;
-    padding-top: 68px;
-    padding-bottom: 48px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../images/registration-form-2.jpg");
+    padding-top: 35px;
+    padding-bottom: 40px;
 }
-
+.login-form-dialog{
+    max-width: 626px;
+}
+.checkbox-container .checkbox{
+    font-size: 16px;
+}
+.login-modal-body{
+    padding: 0;
+}
 .inner .container {
-    padding: 8rem 0 2rem;
     z-index: 9;
     position: relative;
 }
@@ -5222,10 +5226,9 @@ select option[value=""][disabled] {
 }
 
 .tab-switch-main-block {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding-left: 45px;
     margin-bottom: 50px;
 }
 
