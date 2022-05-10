@@ -21,6 +21,10 @@
     }    
 }
 @media(max-width:992px) {
+    .gallery-container {
+        max-width: 830px;
+        width: 95%;
+    }
     .testimonial-main-bg {
         background-color: #93eba6bd;
         clip-path: ellipse(160% 100% at 50% 0%);
@@ -404,6 +408,9 @@
 }
 
 @media(max-width:767px) {
+    .gallery-block-items {
+        width: 50%;
+    }
     .faq-main-bg, .courses-main-bg {
         background-color: #93eba6bd;
         clip-path: ellipse(242% 100% at 50.85% 100%);
@@ -534,6 +541,9 @@
     }
     .xs-banner-slider .active .xs-welcome-wraper p{
         font-size: 1.1em;
+    }
+    .gallery-block-items {
+        width: 100%;
     }
 }
 @media only screen and (max-width:520px){
