@@ -1,5 +1,5 @@
 .xs-heading span, .xs-line-title, .xs-simple-tag li a, a.xs-post-title:hover, blockquote span, .xs-unorder-list li:before, .xs-menus.xs_nav-landscape .nav-submenu li a:hover, .xs-menus.xs_nav-landscape .nav-submenu li a:hover, .xs-feature-content-v2 h2 span, .xs-service-promo span, .xs-volunteer-form input:not([type=submit]), .xs-volunteer-form textarea, .xs-volunteer-form select option, .xs-event-content a:not(.btn), .xs-single-journal .entry-header span a, .xs-funfact-list li p sup, .xs-breadcumb li a:hover, .xs-post-meta-list span a:hover, .xs-post-entry-title a:hover, .xs-blog-post-tag a:hover, .xs-post-author-details em i, .xs-recent-post-widget .post-info .entry-title a:hover, .xs-recent-post-widget .post-info .comments-link i, .xs-side-bar-list li a:hover, .color-aqua, .xs-line-title, .xs-feature-content h2 span, .xs-feature-content-v2 h2 span, blockquote:before {
-    color: #1ed670 !important;
+    color: #1ed670;
     transition: all .4s ease
 }
 

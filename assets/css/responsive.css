@@ -408,6 +408,7 @@
 }
 
 @media(max-width:767px) {
+    
     .gallery-block-items {
         width: 50%;
     }
@@ -422,7 +423,7 @@
         font-size: 20px;
     }    
     .inner .container {
-        padding: 12rem 0 2rem;
+        padding: 3rem 0 3rem;
     }
     .xs_nav-portrait .nav-logo>img {
         height: 60px;
@@ -494,6 +495,11 @@
 
     .xs-blog-post-comment .children {
         padding-left: 15px
+    }
+}
+@media only screen and (max-width:700px){
+    .modal-dialog.modal-dialog-centered.login-form-dialog {
+        margin: 1.75rem 1.75rem;
     }
 }
 @media only screen and (max-width:600px){
