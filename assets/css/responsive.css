@@ -21,6 +21,14 @@
     }    
 }
 @media(max-width:992px) {
+    .banner-video-main-block video {
+        display: block;
+        min-height: 100vh;
+        object-fit: cover;
+    }
+    .banner-video-main-block,.banner-video-main-bg {
+        min-height: 100vh;
+    }
     .gallery-container {
         max-width: 830px;
         width: 95%;
@@ -558,6 +566,14 @@
     }
     .collab-button{
         --fs-size: 1.15em;
+    }
+    .banner-video-main-block, .banner-video-main-bg {
+        min-height: 92vh;
+    }
+    .banner-video-main-block video {
+        display: block;
+        min-height: 92vh;
+        object-fit: cover;
     }
 }
 @media(max-width:480px) {
