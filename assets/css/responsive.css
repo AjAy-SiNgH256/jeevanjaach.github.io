@@ -511,6 +511,11 @@
     }
 }
 @media only screen and (max-width:600px){
+    .banner-video-text-block p {
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+    }
     .testimonial-main-bg {
         background-color: #93eba6bd;
         clip-path: ellipse(190% 100% at 50% 0%);
@@ -561,6 +566,13 @@
     }
 }
 @media only screen and (max-width:520px){
+    .banner-video-button-block a:first-child {
+        margin-right: 0;
+        margin-bottom: 14px;
+    }
+    .banner-video-button-block a{
+        width: 100%;
+    }
     .xs-welcome-wraper{
         text-align: center;
     }
@@ -568,11 +580,11 @@
         --fs-size: 1.15em;
     }
     .banner-video-main-block, .banner-video-main-bg {
-        min-height: 92vh;
+        min-height: 96vh;
     }
     .banner-video-main-block video {
         display: block;
-        min-height: 92vh;
+        min-height: 96vh;
         object-fit: cover;
     }
 }
@@ -590,6 +602,9 @@
     }
 }
 @media only screen and (max-width:440px){
+    .banner-video-text-block p {
+        font-size: 14px;
+    }
     .xs-btn-wraper a {
         margin-right: 0;
     }
