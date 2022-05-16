@@ -6105,16 +6105,52 @@ a[data-fancybox] img {
     width: 33.33%;
 }
 
-.gallery-main-block {
-    display: flex;
+.gallery-image-main-block {
+    display: none;
     flex-wrap: wrap;
 }
-
+.active-gallery-content{
+    display: flex !important;
+}
 .gallery-block-items-content {
     margin: 10px;
     position: relative;
 }
-
+.gallery-tab-block-items a{
+    /* color: #fff;
+    background: #1ed670; */
+    color: #fff;
+    background: transparent;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 20px;
+    font-weight: 500;
+    width: 80%;
+    margin: 0 auto;
+}
+.gallery-tab-active{
+    color: #905348 !important;
+    background: #fff !important;
+}
+.gallery-main-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.gallery-main-bg {
+    background: linear-gradient(270deg,#fff 72%,#905348 70%);
+}
+.gallery-tabs-main-block {
+    width: 20%;
+    padding-top: 70px;
+}
+.gallery-image-main-block {
+    width: 80%;
+    margin: 60px 0;
+    padding-left: 50px;
+}
 .gallery-user-options {
     position: absolute;
     background: rgba(0, 0, 0, 0.7);
