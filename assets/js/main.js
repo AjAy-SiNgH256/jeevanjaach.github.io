@@ -130,6 +130,4 @@ $(document).ready(function () {
     $('.tab-switch-block-items').removeClass('active-tab');
     $(this).addClass('active-tab');
   });
-
-  
 })
