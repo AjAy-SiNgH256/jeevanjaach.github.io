@@ -13,7 +13,9 @@ body {
 .header-container {
     max-width: 1300px;
 }
-
+.volunteer-container{
+    max-width: 900px !important;
+}
 iframe {
     border: none
 }
@@ -2117,7 +2119,8 @@ i.fa.fa-angle-left.xs-round-nav {
     appearance: none;
     background-image: url(../images/option_arrow.png);
     background-repeat: no-repeat;
-    background-position: center right 20px
+    background-position: center right 20px;
+    background-size: 18px;
 }
 
 .xs-volunteer-form select option {
@@ -5312,7 +5315,10 @@ button.testimonial-btn.testimonial-next-btn.slick-arrow {
 }
 
 .form-control:focus {
-    border: 1px solid #ae3c33;
+    border: 2px solid #ae3c33;
+}
+.xs-volunteer-form input:not([type=submit]){
+    color: #041d57 !important;
 }
 
 select {
