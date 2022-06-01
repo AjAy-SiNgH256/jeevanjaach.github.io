@@ -9,29 +9,85 @@ body {
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden
 }
-.xs-title,.xs-line-title{
+
+/*Waves */
+.ocean {
+    height: 180px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+    z-index: 9;
+}
+
+.wave {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23ffffff'/%3E%3C/svg%3E");
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.9;
+}
+
+.wave:nth-of-type(2) {
+    bottom: 0;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.5;
+}
+
+.wave:nth-of-type(3) {
+    bottom: 0;
+    animation: wave 20s -1s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.xs-title, .xs-line-title {
     font-family: 'Island Moments', cursive;
 }
-.course-title{
+
+.course-title {
     color: #05B56B !important;
     font-size: 5em !important;
 }
-.courses-outer-main-block{
+
+.courses-outer-main-block {
     align-items: center;
 }
-.reverse-course-block{
+
+.reverse-course-block {
     flex-direction: row-reverse;
     margin: 3em 0;
 }
-.course-reverse-text-block{
+
+.course-reverse-text-block {
     padding-right: 4em;
 }
+
 .header-container {
     max-width: 1300px;
 }
-.volunteer-container{
+
+.volunteer-container {
     max-width: 900px !important;
 }
+
 iframe {
     border: none
 }
@@ -376,21 +432,26 @@ button.btn-secondary.btn-color-alt,
     padding: 14px 34px;
     background-color: transparent;
 }
-.btn-outline-dark{
+
+.btn-outline-dark {
     border: 1px solid #000;
     background-color: transparent;
     color: #000;
 }
-.btn-outline-dark:hover{
+
+.btn-outline-dark:hover {
     color: #fff;
     background: #000;
 }
-.courses-btn-block a:first-child{
+
+.courses-btn-block a:first-child {
     margin-right: 15px;
 }
-.course-text-block{
+
+.course-text-block {
     padding-left: 4em;
 }
+
 .btn-outline-primary:hover {
     border-color: #fff;
 }
@@ -5348,7 +5409,8 @@ button.testimonial-btn.testimonial-next-btn.slick-arrow {
 .form-control:focus {
     border: 2px solid #ae3c33;
 }
-.xs-volunteer-form input:not([type=submit]){
+
+.xs-volunteer-form input:not([type=submit]) {
     color: #041d57 !important;
 }
 
@@ -6146,14 +6208,17 @@ a[data-fancybox] img {
     display: none;
     flex-wrap: wrap;
 }
-.active-gallery-content{
+
+.active-gallery-content {
     display: flex !important;
 }
+
 .gallery-block-items-content {
     margin: 10px;
     position: relative;
 }
-.gallery-tab-block-items a{
+
+.gallery-tab-block-items a {
     transition: .2s;
     color: #fff;
     background: transparent;
@@ -6166,27 +6231,33 @@ a[data-fancybox] img {
     width: 80%;
     margin: 0 auto;
 }
-.gallery-tab-active{
+
+.gallery-tab-active {
     color: #28513a !important;
     background: #fff !important;
 }
+
 .gallery-main-block {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .gallery-main-bg {
-    background: linear-gradient(270deg,#fff 72%,#57a77b 70%);
+    background: linear-gradient(270deg, #fff 72%, #57a77b 70%);
 }
+
 .gallery-tabs-main-block {
     width: 20%;
     padding-top: 70px;
 }
+
 .gallery-image-main-block {
     width: 80%;
     margin: 60px 0;
     padding-left: 50px;
 }
+
 .gallery-user-options {
     position: absolute;
     background: rgba(0, 0, 0, 0.7);
@@ -6261,13 +6332,15 @@ div#login-modal {
     margin-right: 10px;
 }
 
-.banner-video-main-block video{
+.banner-video-main-block video {
     display: block;
 }
-.banner-video-main-block{
+
+.banner-video-main-block {
     position: relative;
 }
-.banner-video-main-block:after{
+
+.banner-video-main-block:after {
     content: '';
     position: absolute;
     background: rgba(0, 0, 0, 0.35);
@@ -6276,6 +6349,7 @@ div#login-modal {
     top: 0;
     left: 0;
 }
+
 .banner-video-text-block {
     position: absolute;
     z-index: 1;
@@ -6288,18 +6362,22 @@ div#login-modal {
     max-width: 800px;
     width: 90%;
 }
+
 .banner-video-text-block p {
     font-size: 20px;
     text-align: center;
     color: #fff;
 }
+
 .banner-video-button-block a:first-child {
     margin-right: 20px;
 }
+
 .banner-video-button-block {
     margin-top: 24px;
 }
-.gallery-videos-content{
+
+.gallery-videos-content {
     width: 100%;
     height: 200px;
     border-radius: 4px;

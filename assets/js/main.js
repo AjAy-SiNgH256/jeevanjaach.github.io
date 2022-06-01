@@ -100,29 +100,6 @@ $(document).ready(function () {
   });
   AOS.init();
 
-  var timeout;
-  $('.parallax-wrap').mousemove(function (e) {
-    if (timeout) clearTimeout(timeout);
-    setTimeout(callParallax.bind(null, e), 200);
-
-  });
-
-  function callParallax(e) {
-    parallaxIt(e, '.slide h2', -100);
-    parallaxIt(e, '.parallax-wrap img', -30);
-  }
-
-  function parallaxIt(e, target, movement) {
-    var $this = $('.parallax-wrap');
-    var relX = e.pageX - $this.offset().left;
-    var relY = e.pageY - $this.offset().top;
-
-    TweenMax.to(target, 1, {
-      x: (relX - $this.width() / 2) / $this.width() * movement,
-      y: (relY - $this.height() / 2) / $this.height() * movement,
-      ease: Power2.easeOut
-    })
-  }
   $('.tab-switch-block-items').on('click', function () {
     let tabId = $(this).attr('data-id');
     $('.portal').removeClass('active-portal');
