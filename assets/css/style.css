@@ -10,6 +10,10 @@ body {
     overflow-x: hidden
 }
 
+.life-changing-image{
+    object-fit: cover;
+    border-radius: 16px;
+}
 /*Waves */
 .ocean {
     height: 180px;
@@ -29,7 +33,7 @@ body {
     height: 100%;
     animation: wave 10s -3s linear infinite;
     transform: translate3d(0, 0, 0);
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .wave:nth-of-type(2) {
@@ -948,6 +952,7 @@ blockquote span {
 .xs-back-to-top {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
     line-height: 50px;
     background-color: #18bfc3;
     color: #fff;
@@ -1393,10 +1398,11 @@ blockquote span {
 }
 
 .xs-welcome-content {
-    min-height: 900px;
+    min-height: 720px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5146,8 +5152,8 @@ svg {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, .4);
-    z-index: 0
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 0;
 }
 
 .xs-black-overlay.bg-aqua {
