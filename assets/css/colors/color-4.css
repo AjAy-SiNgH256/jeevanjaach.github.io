@@ -3,7 +3,7 @@
     transition: all .4s ease
 }
 
-.xs-line-title:before, .btn-primary, .btn-primary:hover, .btn-secondary:hover:before, .btn-secondary:hover:after, .btn-warning:hover:before, .btn-warning:hover:after, .btn-success:hover:before, .btn-success:hover:after, .xs-info-list i, .xs-back-to-top, .xs-causes-header, .xs-skill-bar .xs-skill-track, .xs-skill-bar p, .xs-feature-box, .xs-service-promo.box-image .xs-black-overlay.bg-aqua, .xs-blog-post-comment .comment-respond .comment-form input[type=submit], .xs-sidebar-widget .widget-title:before, .xs-sidebar-widget .widget-title:after, #preloader, button.btn-secondary.btn-color-alt, .xs-round-nav {
+.btn-primary, .btn-primary:hover, .btn-secondary:hover:before, .btn-secondary:hover:after, .btn-warning:hover:before, .btn-warning:hover:after, .btn-success:hover:before, .btn-success:hover:after, .xs-info-list i, .xs-back-to-top, .xs-causes-header, .xs-skill-bar .xs-skill-track, .xs-skill-bar p, .xs-feature-box, .xs-service-promo.box-image .xs-black-overlay.bg-aqua, .xs-blog-post-comment .comment-respond .comment-form input[type=submit], .xs-sidebar-widget .widget-title:before, .xs-sidebar-widget .widget-title:after, #preloader, button.btn-secondary.btn-color-alt, .xs-round-nav {
     background-color: #1ed670 !important;
     transition: all .4s ease
 }

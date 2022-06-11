@@ -21,6 +21,9 @@
     }    
 }
 @media(max-width:992px) {
+    h2.xs-line-title.xs-line-title-alter{
+        font-size: 4em;
+    }
     .course-text-block,.course-reverse-text-block {
         padding-left: 0;
         text-align: center;
@@ -632,6 +635,9 @@
     }
 }
 @media(max-width:480px) {
+    .xs-text-content h2 {
+        line-height: 55px;
+    }
     .ocean {
         height: 50px;
     }
