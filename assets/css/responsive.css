@@ -561,8 +561,11 @@
     }
 }
 @media only screen and (max-width:600px){
+    .collab-welcome-content{
+        background-position: 50% 100% !important;
+    }
     .testimonial-btn{
-        display: none;
+        display: none !important;
     }
     .ocean {
         height: 100px;
@@ -656,6 +659,9 @@
     }
 }
 @media(max-width:480px) {
+    .collab-learn-more-btn .collab-button-text{
+        top: -4px;
+    }
     .xs-text-content h2 {
         line-height: 55px;
     }

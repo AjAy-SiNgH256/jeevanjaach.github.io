@@ -20,6 +20,24 @@ h2.xs-line-title.xs-line-title-alter {
     font-size: 5em;
     font-weight: 700;
 }
+.collab-welcome-content{
+    background-position: 22% 100%;
+}
+.testimonial-header{
+    display: flex;
+}
+/*Collab */
+#collab-title{
+    color: #fff !important;
+}
+.collab-main-block{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0 60px;
+}
+.collab-para-block p{
+    color: #fff !important;
+}
 /*Collab Read More Btn*/
 .collab-learn-more-btn {
     position: relative;
@@ -6157,9 +6175,15 @@ select option[value=""][disabled] {
 }
 
 .collab-btn-main-block {
-    margin-top: 38px;
+    margin-top: 25px;
+    text-align: right;
 }
-
+.collab-members-logo-block{
+    align-items: center;
+}
+.collab-bottom-block-items {
+    margin-top: 45px;
+}
 .collab-button {
     margin: 0;
     background: transparent;
