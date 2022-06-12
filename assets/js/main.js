@@ -58,8 +58,8 @@ $(document).ready(function () {
     prevArrow: false,
     nextArrow: false,
     autoplay: true,
-    // prevArrow: '<button class="testimonial-btn testimonial-prev-btn"><i class="fas fa-arrow-left slider-icons"></i></button>',
-    // nextArrow: '<button class="testimonial-btn testimonial-next-btn"><i class="fas fa-arrow-right slider-icons"></i></button>',
+    prevArrow: '<button class="testimonial-btn testimonial-prev-btn"><i class="fas fa-arrow-left slider-icons"></i></button>',
+    nextArrow: '<button class="testimonial-btn testimonial-next-btn"><i class="fas fa-arrow-right slider-icons"></i></button>',
     responsive: [
       {
         breakpoint: 1024,

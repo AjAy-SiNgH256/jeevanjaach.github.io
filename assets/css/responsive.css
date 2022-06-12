@@ -9,6 +9,16 @@
     .xs-header .nav-menu li a {
         font-size: 12px;
     }   
+    button.testimonial-btn.testimonial-prev-btn.slick-arrow {
+        top: 50%;
+        left: -18px;
+        transform: translateY(-50%);
+    }
+    button.testimonial-btn.testimonial-next-btn.slick-arrow {
+        top: 50%;
+        right: -18px;
+        transform: translateY(-50%);
+    }
 }
 @media only screen and (min-width:1197px) and (max-width:1288px){
     .xs-header .nav-menu li a {
@@ -21,6 +31,20 @@
     }    
 }
 @media(max-width:992px) {
+    button.testimonial-btn.testimonial-prev-btn.slick-arrow {
+        top: 50%;
+        left: -15px;
+        transform: translateY(-50%);
+    }
+    button.testimonial-btn.testimonial-next-btn.slick-arrow {
+        top: 50%;
+        right: -15px;
+        transform: translateY(-50%);
+    }
+    .xs-text-content h2 {
+        margin-bottom: 20px;
+        font-size: 4em;
+    }
     h2.xs-line-title.xs-line-title-alter{
         font-size: 4em;
     }
@@ -43,10 +67,7 @@
         max-width: 830px;
         width: 95%;
     }
-    .testimonial-main-bg {
-        background-color: #93eba6bd;
-        clip-path: ellipse(160% 100% at 50% 0%);
-    }
+    
     .faq-main-bg, .courses-main-bg {
         background-color: #93eba6bd;
         clip-path: ellipse(172% 100% at 50.85% 100%);
@@ -165,7 +186,7 @@
         font-size: 4em !important;
     }
     .xs-section-padding, .xs-about-v2~.xs-popularCauses-v2 {
-        padding: 60px 0
+        padding: 35px 0;
     }
 
     .xs-content-section-padding {
@@ -540,6 +561,9 @@
     }
 }
 @media only screen and (max-width:600px){
+    .testimonial-btn{
+        display: none;
+    }
     .ocean {
         height: 100px;
     }
@@ -548,10 +572,7 @@
         text-align: center;
         color: #fff;
     }
-    .testimonial-main-bg {
-        background-color: #93eba6bd;
-        clip-path: ellipse(190% 100% at 50% 0%);
-    }
+    
     .entry-meta h5 {
         font-size: 1.4rem !important;
     }

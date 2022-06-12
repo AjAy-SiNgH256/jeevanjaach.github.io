@@ -117,9 +117,11 @@ h2.xs-line-title.xs-line-title-alter {
     left: 0;
     right: 0;
     overflow-x: hidden;
-    z-index: 9;
+    z-index: 1;
 }
-
+.donation-image-block {
+    padding-right: 40px;
+}
 .wave {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23ffffff'/%3E%3C/svg%3E");
     position: absolute;
@@ -1844,7 +1846,8 @@ i.fa.fa-angle-left.xs-round-nav {
 }
 
 .xs-text-content h2 {
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    font-size: 5em;
 }
 
 .xs-text-content p {
@@ -5269,7 +5272,7 @@ svg {
 h1,
 h2,
 h3 {
-    line-height: 1.4
+    line-height: 1.1;
 }
 
 .xs-pr-10 {
@@ -5358,20 +5361,19 @@ button.testimonial-btn {
     z-index: 9;
     outline: none;
     cursor: pointer;
-    padding: 16px 20px;
-    border: 2px solid #000;
-    background: #fff;
+    border: none;
+    background: transparent;
 }
 
 button.testimonial-btn.testimonial-prev-btn.slick-arrow {
     top: 50%;
-    left: -56px;
+    left: -30px;
     transform: translateY(-50%);
 }
 
 button.testimonial-btn.testimonial-next-btn.slick-arrow {
     top: 50%;
-    right: -56px;
+    right: -30px;
     transform: translateY(-50%);
 }
 
@@ -5708,6 +5710,8 @@ select option[value=""][disabled] {
 .donation-image-block img {
     border-top-right-radius: 38px;
     border-bottom-left-radius: 38px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .accordion-heading {
