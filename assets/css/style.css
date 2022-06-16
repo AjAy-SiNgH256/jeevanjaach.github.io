@@ -26,6 +26,9 @@ h2.xs-line-title.xs-line-title-alter {
 .testimonial-header{
     display: flex;
 }
+.donation-section{
+    padding: 3em 0;
+}
 /*Collab */
 #collab-title{
     color: #fff !important;
@@ -177,7 +180,7 @@ h2.xs-line-title.xs-line-title-alter {
 }
 
 .xs-title, .xs-line-title {
-    font-family: 'Island Moments', cursive;
+    font-family: 'Moon Dance', cursive;
 }
 
 .course-title {
@@ -187,11 +190,12 @@ h2.xs-line-title.xs-line-title-alter {
 
 .courses-outer-main-block {
     align-items: center;
+    margin: 5em 0;
 }
 
 .reverse-course-block {
     flex-direction: row-reverse;
-    margin: 3em 0;
+    margin: 7em 0 0;
 }
 
 .course-reverse-text-block {
@@ -5897,6 +5901,7 @@ select option[value=""][disabled] {
 
 .xs-title {
     margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .content-text h3 {

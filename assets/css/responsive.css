@@ -31,6 +31,17 @@
     }    
 }
 @media(max-width:992px) {
+    .donation-section {
+        padding: 0em 0;
+    }
+    .reverse-course-block {
+        flex-direction: row-reverse;
+        margin: 3em 0 0;
+    }
+    .courses-outer-main-block {
+        align-items: center;
+        margin: 3em 0;
+    }
     button.testimonial-btn.testimonial-prev-btn.slick-arrow {
         top: 50%;
         left: -15px;
