@@ -115,4 +115,10 @@ $(document).ready(function () {
     $("div.bhoechie-tab .course-items-container>div.bhoechie-tab-content").removeClass("active");
     $("div.bhoechie-tab .course-items-container>div.bhoechie-tab-content").eq(index).addClass("active");
 });
+
+  $('.course-enroll-tab').on('click',function(){
+    let formId = $(this).attr("data-id");
+    $('.batch-form').removeClass("active-form");
+    $('.batch-form[data-id = "' + formId + '"]').addClass("active-form");
+  },);
 })

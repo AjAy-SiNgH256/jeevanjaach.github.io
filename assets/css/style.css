@@ -6564,6 +6564,9 @@ div.bhoechie-tab-menu div.list-group {
 
 div.bhoechie-tab-menu div.list-group>a {
     margin-bottom: 0;
+    transition: .2s;
+    border: none;
+    color: #041d57;
 }
 
 div.bhoechie-tab-menu div.list-group>a .glyphicon,
@@ -6584,9 +6587,9 @@ div.bhoechie-tab-menu div.list-group>a:last-child {
 div.bhoechie-tab-menu div.list-group>a.active,
 div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
 div.bhoechie-tab-menu div.list-group>a.active .fa {
-    background-color: #5A55A3;
+    background-color: #1ed670;
     background-image: #5A55A3;
-    color: #ffffff;
+    color: #fff;
 }
 
 div.bhoechie-tab-menu div.list-group>a.active:after {
@@ -6598,7 +6601,7 @@ div.bhoechie-tab-menu div.list-group>a.active:after {
     border-left: 0;
     border-bottom: 13px solid transparent;
     border-top: 13px solid transparent;
-    border-left: 10px solid #5A55A3;
+    border-left: 10px solid #1ed670;
 }
 div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
     display: none;
@@ -6617,6 +6620,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
 }
 .course-enroll-tab {
     text-align: center;
+    cursor: pointer;
 }
 .course-form-block {
     flex-direction: column;
@@ -6635,5 +6639,17 @@ input[type=checkbox], input[type=radio]{
     max-width: 1040px;
     width: 95%;
     margin: 0 auto;
+}
+.batch-form{
+    display: none;
+}
+.active-form{
+    display: block;
+}
+.course-description-para-block p{
+    font-size: 18px;
+}
+.batch-form :is(p){
+    font-size: 18px;
 }
 /*Course CSS End*/

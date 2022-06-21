@@ -460,6 +460,24 @@
 }
 
 @media(max-width:767px) {
+    .list-group {
+        font-size: 18px;
+    }
+    .batch-form :where(label){
+        margin-bottom: 1rem;
+    }
+    .form-radio {
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    div.bhoechie-tab-menu div.list-group>a.active:after{
+        content: none;
+    }
+    .course-items-container {
+        padding: 4em 0;
+    }
     .gallery-main-block {
         display: flex;
         flex-direction: column;
@@ -572,6 +590,9 @@
     }
 }
 @media only screen and (max-width:600px){
+    .course-description-para-block p {
+        font-size: 16px;
+    }
     .collab-welcome-content{
         background-position: 50% 100% !important;
     }
@@ -670,6 +691,9 @@
     }
 }
 @media(max-width:480px) {
+    .batch-form :where(h6){
+        font-size: 1.3rem;
+    }
     .collab-learn-more-btn .collab-button-text{
         top: -4px;
     }
