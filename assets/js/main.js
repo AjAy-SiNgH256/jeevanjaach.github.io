@@ -48,7 +48,7 @@
   function init() { var mapOptions = { zoom: 11, scrollwheel: false, navigationControl: false, mapTypeControl: true, scaleControl: false, draggable: true, disableDefaultUI: true, center: new google.maps.LatLng(40.6700, -73.9400), styles: [{ "featureType": "administrative", "elementType": "all", "stylers": [{ "saturation": "-100" }] }, { "featureType": "administrative.province", "elementType": "all", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": 65 }, { "visibility": "on" }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "saturation": -100 }, { "lightness": "50" }, { "visibility": "simplified" }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "saturation": "-100" }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.arterial", "elementType": "all", "stylers": [{ "lightness": "30" }] }, { "featureType": "road.local", "elementType": "all", "stylers": [{ "lightness": "40" }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "saturation": -100 }, { "visibility": "simplified" }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "hue": "#ffff00" }, { "lightness": -25 }, { "saturation": -97 }] }, { "featureType": "water", "elementType": "labels", "stylers": [{ "lightness": -25 }, { "saturation": -100 }] }] }; var mapElement = document.getElementById('xs-map'); var map = new google.maps.Map(mapElement, mapOptions); var marker = new google.maps.Marker({ position: new google.maps.LatLng(40.6700, -73.9400), map: map, title: 'Snazzy!' }); }
 })(jQuery);
 $(document).ready(function () {
-  
+
   $('.testimonial-slider').slick({
     dots: false,
     infinite: true,
@@ -107,18 +107,65 @@ $(document).ready(function () {
     $('.tab-switch-block-items').removeClass('active-tab');
     $(this).addClass('active-tab');
   });
-  $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+  $("div.bhoechie-tab-menu>div.list-group>a").click(function (e) {
     e.preventDefault();
     $(this).siblings('a.active').removeClass("active");
     $(this).addClass("active");
     var index = $(this).index();
     $("div.bhoechie-tab .course-items-container>div.bhoechie-tab-content").removeClass("active");
     $("div.bhoechie-tab .course-items-container>div.bhoechie-tab-content").eq(index).addClass("active");
-});
+  });
 
-  $('.course-enroll-tab').on('click',function(){
+  $('.course-enroll-tab').on('click', function () {
     let formId = $(this).attr("data-id");
     $('.batch-form').removeClass("active-form");
     $('.batch-form[data-id = "' + formId + '"]').addClass("active-form");
-  },);
+  });
+
+  $('.form-submit-btn').on('click', function () {
+    //Input field Validate//
+    let fname = $('#inputfirstname').val();
+    let lname = $('#inputlastname').val();
+    let email = $('#inputEmail').val();
+    let fathername = $('#father-name').val();
+    let mothername = $('#mother-name').val();
+
+    if (fname.length < 3 || fathername.length < 3 || lname.length < 3 || mothername.length < 3) {
+      alert("Enter valid Name");
+    }
+    else {
+      return true;
+    }
+    //-------//
+
+    //Email Validation//
+    function ValidateEmail(mail) {
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        return true;
+      }
+      alert("You have entered an invalid email address!");
+      return (false);
+    }
+    //------//
+
+    //Gender Radio Button Validate//
+    function checkForm() {
+      let chosenOption = "";
+      const len = document.regular-batch-form.gender.length;
+
+      for (i = 0; i < len; i++) {
+        if (document.regular-batch-form.gender[i].checked) {
+          chosenOption = document.regular-batch-form.gender[i].value;
+        }
+      }
+
+      if (chosenOption == "") {
+        alert("Please choose your gender!");
+        return false;
+      } 
+      else {
+        console.log(chosenOption);
+      }
+    }
+  });
 })
