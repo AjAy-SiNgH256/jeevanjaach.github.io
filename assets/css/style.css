@@ -6653,3 +6653,87 @@ input[type=checkbox], input[type=radio]{
     font-size: 18px;
 }
 /*Course CSS End*/
+/* Login Page Css*/
+.login-main-bg {
+    background: #e4e7ec;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form.login-form {
+    margin-top: 25px;
+}
+.form-input-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 4em 0;
+}
+.form-block-items{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+.login-form-title{
+    margin-bottom: 12px;
+}
+.form-image-block{
+    padding: 0;
+}
+.form-block-items input[type="email"]{
+    border: 2px solid #b4b4b4;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+.form-block-items input[type="password"]{
+    border: 2px solid #b4b4b4;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+.login-portal-block{
+    min-width: 380px;
+}
+.form-remember-block-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 18px 0 8px;
+}
+.form-btn-block button {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.form-action-btn {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+.sign-up-btn {
+    background: #000;
+    color: #fff;
+}
+.sign-in-btn {
+    background: #fff;
+    border: 2px solid #b4b4b4;
+    font-weight: 500;
+}
+.sign-in-btn span img{
+    margin-right: 10px;
+}
+.remember-inner-block :where(a,label){
+    color: #000;
+    font-weight: 500;
+    transition: .2s;
+}
+.form-image-block img{
+    height: 100%;
+    object-fit: cover;
+}
+.form-block-items span a{
+    color: #000;
+    font-weight: 600;
+}
