@@ -31,6 +31,15 @@
     }    
 }
 @media(max-width:992px) {
+    .form-remember-block-items {
+        font-size: 13px;
+    }
+    .login-portal-block {
+        min-width: 320px;
+    }
+    .login-form-title {
+        font-size: 3.5em !important;
+    }
     .donation-section {
         padding: 0em 0;
     }
@@ -460,6 +469,16 @@
 }
 
 @media(max-width:767px) {
+    .form-input-block {
+        border-radius: 8px;
+    }
+    .form-image-block {
+        padding: 0;
+        display: none;
+    }
+    .login-portal-block {
+        min-width: 95%;
+    }
     .list-group {
         font-size: 18px;
     }
@@ -467,7 +486,6 @@
         margin-bottom: 1rem;
     }
     .form-radio {
-        margin-right: 0;
         display: flex;
         flex-direction: row;
         align-items: baseline;
@@ -691,6 +709,10 @@
     }
 }
 @media(max-width:480px) {
+    .remember-inner-block input[type='checkbox']{
+        transform: scale(1);
+        margin-right: 3px;
+    }
     .batch-form :where(h6){
         font-size: 1.3rem;
     }
@@ -733,6 +755,28 @@
         width: 100%;
         height: 276px;
     }
+    .form-input-block {
+        min-height: 84vh;
+    }
+    .login-form-title {
+        margin-top: 18px;
+    }
+}
+@media only screen and (max-width:400px){
+    .form-block-items,.form-remember-block-items {
+        font-size: 12px;
+    }
+    .form-action-btn {
+        font-size: 13px;
+    }
+    .form-input-block {
+        min-height: 80vh;
+    }
+}
+@media only screen and (max-width:350px) {
+    .form-block-items, .form-remember-block-items {
+        font-size: 11px;
+    }
 }
 @media(max-width:320px) {
     html {
@@ -745,4 +789,5 @@
         width: 100%;
         height: 182px;
     }
+    
 }

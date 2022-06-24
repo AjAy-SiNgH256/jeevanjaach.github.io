@@ -139,7 +139,7 @@ $(document).ready(function () {
     //-------//
 
     //Email Validation//
-    function ValidateEmail(mail) {
+    function ValidateEmail(email) {
       if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
         return true;
       }
@@ -151,21 +151,41 @@ $(document).ready(function () {
     //Gender Radio Button Validate//
     function checkForm() {
       let chosenOption = "";
-      const len = document.regular-batch-form.gender.length;
+      const len = document.regular - batch - form.gender.length;
 
       for (i = 0; i < len; i++) {
-        if (document.regular-batch-form.gender[i].checked) {
-          chosenOption = document.regular-batch-form.gender[i].value;
+        if (document.regular - batch - form.gender[i].checked) {
+          chosenOption = document.regular - batch - form.gender[i].value;
         }
       }
 
       if (chosenOption == "") {
         alert("Please choose your gender!");
         return false;
-      } 
+      }
       else {
         console.log(chosenOption);
       }
     }
+  });
+
+  //login form//
+  $('.form-switch-btn').on('click', function () {
+    let formId = $(this).attr('data-id');
+    $('.login-form').removeClass('active-form');
+    $('.login-form[data-id = "' + formId + '"]').addClass('active-form');
+  });
+  //Login Page Email Validation//
+  $('.form-action-btn').on('click', function () {
+    let form_email = $('#email').val();
+    //Email Validation//
+    function ValidateEmail(form_email) {
+      if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form_email)) {
+        return true;
+      }
+      alert("You have entered an invalid email address!");
+      return (false);
+    }
+    //------//
   });
 })

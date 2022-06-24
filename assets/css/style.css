@@ -5531,12 +5531,12 @@ button.testimonial-btn.testimonial-next-btn.slick-arrow {
 }
 
 .form-control {
-    border: 2px solid #da444a;
+    border: 2px solid #b4b4b4;
     display: block;
     width: 100%;
     height: 48px;
     padding: 0 20px;
-    border-radius: 50px;
+    border-radius: 8px;
     font-family: "Poppins";
     background: none;
 }
@@ -6664,6 +6664,8 @@ input[type=checkbox], input[type=radio]{
 }
 form.login-form {
     margin-top: 25px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .form-input-block{
     display: flex;
@@ -6671,7 +6673,13 @@ form.login-form {
     align-items: center;
     justify-content: center;
     background: #fff;
-    padding: 4em 0;
+    min-height: 88vh;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.form-image-block img{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .form-block-items{
     display: flex;
@@ -6684,12 +6692,7 @@ form.login-form {
 .form-image-block{
     padding: 0;
 }
-.form-block-items input[type="email"]{
-    border: 2px solid #b4b4b4;
-    border-radius: 8px;
-    padding: 6px 12px;
-}
-.form-block-items input[type="password"]{
+.form-block-items input[type="email"],input[type="password"],input[type="text"]{
     border: 2px solid #b4b4b4;
     border-radius: 8px;
     padding: 6px 12px;
@@ -6715,6 +6718,7 @@ form.login-form {
 .sign-up-btn {
     background: #000;
     color: #fff;
+    border: 2px solid #000;
 }
 .sign-in-btn {
     background: #fff;
@@ -6736,4 +6740,14 @@ form.login-form {
 .form-block-items span a{
     color: #000;
     font-weight: 600;
+}
+.form-block-items label {
+    color: #000;
+    font-weight: 500;
+}
+.login-form{
+    display: none;
+}
+.active-form{
+    display: block;
 }

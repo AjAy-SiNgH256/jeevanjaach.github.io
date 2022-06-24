@@ -33,27 +33,35 @@
 </head>
 
 <body>
-    <section class="">
+    <div id="preloader">
+		<div class="spinner">
+			<div class="double-bounce1"></div>
+			<div class="double-bounce2"></div>
+		</div>
+	</div>
+
+    <section class="login-section">
         <div class="login-main-bg">
             <div class="container page-width">
                 <div class="col-lg-12 login-main-block">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 form-input-block">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-6 col-sm-9 form-input-block">
                             <div class="login-portal-block">
                                 <h2 class="xs-title login-form-title">Welcome back</h2>
                                 <p>Welcome back! Please enter your details</p>
-                                <form class="login-form">
+                                <form class="login-form active-form" data-id="sign-in-form">
                                     <div class="form-block-items">
                                         <label for="email">Email</label>
-                                        <input type="email" name="email" id="email" placeholder="Enter your email"/>
+                                        <input type="email" name="email" id="email" placeholder="Enter your email" />
                                     </div>
                                     <div class="form-block-items">
                                         <label for="password">Password</label>
-                                        <input type="password" name="password" id="password" placeholder="Enter your password"/>
+                                        <input type="password" name="password" id="password"
+                                            placeholder="Enter your password" />
                                     </div>
                                     <div class="form-remember-block-items">
                                         <div class="remember-inner-block">
-                                            <input type="checkbox" name="rememberme" id="rememberme" />
+                                            <input type="checkbox" name="rememberme" id="rememberme"/>
                                             <label for="rememberme">Remember for 30 days</label>
                                         </div>
                                         <div class="remember-inner-block">
@@ -62,10 +70,48 @@
                                     </div>
                                     <div class="form-btn-block">
                                         <button type="submit" class="sign-up-btn form-action-btn">Sign in</button>
-                                        <button type="submit" class="sign-in-btn form-action-btn"><span><img src="assets/images/Google__G__Logo.svg" alt="icon"></span>Sign in with Google</button>
+                                        <button type="submit" class="sign-in-btn form-action-btn"><span><img
+                                                    src="assets/images/Google__G__Logo.svg" alt="icon"></span>Sign in
+                                            with Google</button>
                                     </div>
                                     <div class="form-block-items">
-                                        <p>Don't have an account?<span><a href=""> Sign up for free</a></span></p>
+                                        <p>Don't have an account? <span><a href="javascript:void(0)"
+                                                    class="form-switch-btn" data-id="sign-up-form"> Sign up for
+                                                    free</a></span></p>
+                                    </div>
+                                </form>
+                                <form class="login-form" data-id="sign-up-form">
+                                    <div class="form-block-items">
+                                        <label for="username">Full Name</label>
+                                        <input type="text" name="username" id="username" placeholder="Enter your name" />
+                                    </div>
+                                    <div class="form-block-items">
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="email" placeholder="Enter your email" />
+                                    </div>
+                                    <div class="form-block-items">
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" id="password"
+                                            placeholder="Enter your password" />
+                                    </div>
+                                    <!-- <div class="form-remember-block-items">
+                                        <div class="remember-inner-block">
+                                            <input type="checkbox" name="rememberme" id="rememberme" />
+                                            <label for="rememberme">Remember for 30 days</label>
+                                        </div>
+                                        <div class="remember-inner-block">
+                                            <a href="javascript:void(0)">Forgot password</a>
+                                        </div>
+                                    </div> -->
+                                    <div class="form-btn-block">
+                                        <button type="submit" class="sign-up-btn form-action-btn" style="margin-top:8px">Sign up</button>
+                                        <button type="submit" class="sign-in-btn form-action-btn"><span><img
+                                                    src="assets/images/Google__G__Logo.svg" alt="icon"></span>Sign up
+                                            with Google</button>
+                                    </div>
+                                    <div class="form-block-items">
+                                        <p>Already have an account? <span><a href="javascript:void(0)"
+                                            class="form-switch-btn" data-id="sign-in-form"> Sign in</a></span></p>
                                     </div>
                                 </form>
                             </div>
