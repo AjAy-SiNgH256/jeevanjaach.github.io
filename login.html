@@ -39,7 +39,52 @@
 			<div class="double-bounce2"></div>
 		</div>
 	</div>
+    <header class="xs-header header-transparent">
+		<div class="container header-container">
+			<nav class="xs-menus">
+				<div class="nav-header">
+					<div class="nav-toggle"></div>
+					<a href="index.html" class="nav-logo">
+						<img src="assets/images/footer_logo.png" alt="logo">
+					</a>
+				</div>
+				<div class="nav-menus-wrapper row align-items-center">
+					<div class="xs-logo-wraper col-lg-2 xs-padding-0">
+						<a class="nav-brand" href="index.html">
+							<img src="assets/images/footer_logo.png" alt="logo">
+						</a>
+					</div>
+					<div class="col-lg-7">
+						<ul class="nav-menu">
+							<li><a href="index.html" class="navbar-items">Home</a></li>
+							<li><a href="javascript:void(0)" class="navbar-items">Q & A</a></li>
 
+							<li><a href="#" class="navbar-items">Webinars</a>
+								<ul class="nav-dropdown">
+									<li><a href="event.html">Upcoming Webinars</a></li>
+									<li><a href="event-single.html">Recorded Webinars</a></li>
+								</ul>
+							</li>
+							<li><a href="volunteer.html" class="navbar-items">Join Our Team</a></li>
+							<li><a href="team.html" class="navbar-items">Our Team</a></li>
+							<li><a href="#" class="navbar-items">Explore Us</a>
+								<ul class="nav-dropdown">
+									<li><a href="gallery.html">Gallery</a></li>
+									<li><a href="article.html">Articles</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+					<div class="xs-navs-button d-flex-center-end col-lg-3">
+						<a href="login.html" class="btn btn-primary">
+							<span class="badge"><i class="fa fa-user"></i></span> Login / Sign Up
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
     <section class="login-section">
         <div class="login-main-bg">
             <div class="container page-width">
@@ -70,9 +115,7 @@
                                     </div>
                                     <div class="form-btn-block">
                                         <button type="submit" class="sign-up-btn form-action-btn">Sign in</button>
-                                        <button type="submit" class="sign-in-btn form-action-btn"><span><img
-                                                    src="assets/images/Google__G__Logo.svg" alt="icon"></span>Sign in
-                                            with Google</button>
+                                        
                                     </div>
                                     <div class="form-block-items">
                                         <p>Don't have an account? <span><a href="javascript:void(0)"
@@ -85,6 +128,38 @@
                                         <label for="username">Full Name</label>
                                         <input type="text" name="username" id="username" placeholder="Enter your name" />
                                     </div>
+                                    <div class="form-row">
+                                        <div class="form-group form-block-items course-form-block col-md-6">
+                                            <h6><label for="inputEmail">Email</label></h6>
+                                            <input type="email" class="form-control" id="inputEmail"
+                                                oninvalid="this.setCustomValidity('Email cannot be Empty')">
+                                        </div>
+                                        <div class="form-group form-block-items course-form-block col-md-6">
+                                            <h6><label for="inputdob">Date of Birth</label></h6>
+                                            <input type="date" class="form-control" id="inputdob">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group course-form-block">
+                                            <h6><label>Gender</label></h6>
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="form-radio">
+                                                        <input type="radio" id="radiomale" name="gender" />
+                                                        <label for="radiomale">Male</label>
+                                                    </div>
+                                                    <div class="form-radio">
+                                                        <input type="radio" id="radiofemale" name="gender" />
+                                                        <label for="radiofemale">Female</label>
+                                                    </div>
+                                                    <div class="form-radio">
+                                                        <input type="radio" id="radioother" name="gender" />
+                                                        <label for="radioother">Other</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="form-block-items">
                                         <label for="email">Email</label>
                                         <input type="email" name="email" id="email" placeholder="Enter your email" />
@@ -94,6 +169,98 @@
                                         <input type="password" name="password" id="password"
                                             placeholder="Enter your password" />
                                     </div>
+                                    <div class="form-row">
+                                        <div class="form-group course-form-block col-md-12">
+                                            <h6><label for="inputqualification">Learners Qualification</label></h6>
+                                            <input type="email" class="form-control" id="inputqualification">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group course-form-block col-md-6">
+                                            <h6><label for="father-name">Father's Name</label></h6>
+                                            <input type="text" class="form-control" id="father-name">
+                                        </div>
+                                        <div class="form-group course-form-block col-md-6">
+                                            <h6><label for="father-mobile">Father's Mobile Number</label></h6>
+                                            <input type="tel" class="form-control" pattern="[1-9]{1}[0-9]{9}"
+                                                maxlength="10" id="father-mobile">
+                                        </div>
+                                        <div class="form-group course-form-block col-md-12">
+                                            <h6><label for="father-occupation">Father's Occupation</label></h6>
+                                            <input type="text" class="form-control" id="father-occupation">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group course-form-block col-md-6">
+                                            <h6><label for="mother-name">Mother's Name</label></h6>
+                                            <input type="text" class="form-control" id="mother-name">
+                                        </div>
+                                        <div class="form-group course-form-block col-md-6">
+                                            <h6><label for="mother-mobile">Mother's Mobile Number</label></h6>
+                                            <input type="tel" class="form-control" pattern="[1-9]{1}[0-9]{9}"
+                                                maxlength="10" id="mother-mobile">
+                                        </div>
+                                        <div class="form-group course-form-block col-md-12">
+                                            <h6><label for="mother-occupation">Mother's Occupation</label></h6>
+                                            <input type="text" class="form-control" id="mother-occupation">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group course-form-block">
+                                        <label for="inputAddress">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress"
+                                            placeholder="1234 Main St">
+                                    </div>
+                                    <div class="form-group course-form-block">
+                                        <label for="inputAddress2">Address 2</label>
+                                        <input type="text" class="form-control" id="inputAddress2"
+                                            placeholder="Apartment, studio, or floor">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group course-form-block col-md-6">
+                                            <label for="inputCity">City</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <div class="form-group course-form-block col-md-4">
+                                            <label for="inputState">State</label>
+                                            <select id="inputState" class="form-control">
+                                                <option selected>Choose...</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group course-form-block col-md-2">
+                                            <label for="inputZip">Zip</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group course-form-block">
+                                            <h6><label>Your preferred Batch & Time slot</label></h6>
+                                            <div class="form-radio">
+                                                <input type="radio" id="radiotime1" name="radio-alter2" />
+                                                <label for="radiotime1">Regular Batch (Mon-Fri) [Afternoon] 02:30 PM
+                                                    to
+                                                    04:30 PM IST</label>
+                                            </div>
+                                            <div class="form-radio">
+                                                <input type="radio" id="radiotime2" name="radio-alter2" />
+                                                <label for="radiotime2">Regular Batch (Mon- Fri) [Evening] 06:30 PM
+                                                    to
+                                                    08:30 PM IST</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group course-form-block">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck"
+                                                required=""
+                                                oninvalid="this.setCustomValidity('Please Accept the Checkbox')">
+                                            <label class="form-check-label" for="gridCheck">
+                                                Check me out
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
                                     <!-- <div class="form-remember-block-items">
                                         <div class="remember-inner-block">
                                             <input type="checkbox" name="rememberme" id="rememberme" />
@@ -104,10 +271,7 @@
                                         </div>
                                     </div> -->
                                     <div class="form-btn-block">
-                                        <button type="submit" class="sign-up-btn form-action-btn" style="margin-top:8px">Sign up</button>
-                                        <button type="submit" class="sign-in-btn form-action-btn"><span><img
-                                                    src="assets/images/Google__G__Logo.svg" alt="icon"></span>Sign up
-                                            with Google</button>
+                                        <button type="submit" class="sign-up-btn form-action-btn form-submit-btn" style="margin-top:8px">Sign up</button>
                                     </div>
                                     <div class="form-block-items">
                                         <p>Already have an account? <span><a href="javascript:void(0)"
