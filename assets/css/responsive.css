@@ -468,9 +468,10 @@
     }
 }
 
-@media(max-width:767px) {
+@media(max-width:769px) {
     .form-input-block {
         border-radius: 8px;
+        min-width: 95% !important;
     }
     .form-image-block {
         padding: 0;
