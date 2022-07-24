@@ -5551,10 +5551,6 @@ button.testimonial-btn.testimonial-next-btn.slick-arrow {
     height: auto;
     line-height: inherit;
 }
-.form-group.course-form-block select {
-    height: 41px;
-}
-
 .form-control:focus {
     border: 2px solid #ae3c33;
 }
