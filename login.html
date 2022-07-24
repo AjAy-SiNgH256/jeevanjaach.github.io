@@ -94,8 +94,10 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-6 col-sm-9 form-input-block">
                             <div class="login-portal-block">
-                                <h2 class="xs-title login-form-title">Welcome back</h2>
-                                <p>Welcome back! Please enter your details</p>
+                                <h2 class="xs-title login-form-title active-form-title" data-id="sign-in-form">Welcome back</h2>
+                                <h2 class="xs-title login-form-title" data-id="sign-up-form">Sign Up</h2>
+                                <p class="login-form-para active-form-para" data-id="sign-in-form">Welcome back! Please Enter Your Details</p>
+                                <p class="login-form-para" data-id="sign-up-form">Hello ! Please Enter the Details</p>
                                 <form class="login-form active-form" data-id="sign-in-form">
                                     <div class="form-block-items">
                                         <label for="email">Email</label>
@@ -134,12 +136,8 @@
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <div class="form-group form-block-items course-form-block col-md-6">
-                                            <label for="inputEmail">Email</label>
-                                            <input type="email" class="form-control" id="inputEmail"
-                                                oninvalid="this.setCustomValidity('Email cannot be Empty')">
-                                        </div>
-                                        <div class="form-group form-block-items course-form-block col-md-6">
+                                        
+                                        <div class="form-group form-block-items course-form-block col-md-12">
                                             <label for="inputdob">Date of Birth</label>
                                             <input type="date" class="form-control" id="inputdob">
                                         </div>

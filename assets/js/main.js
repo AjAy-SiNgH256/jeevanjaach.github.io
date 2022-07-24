@@ -174,6 +174,10 @@ $(document).ready(function () {
     let formId = $(this).attr('data-id');
     $('.login-form').removeClass('active-form');
     $('.login-form[data-id = "' + formId + '"]').addClass('active-form');
+    $('.login-form-title').removeClass('active-form-title');
+    $('.login-form-title[data-id = "' + formId + '"]').addClass('active-form-title');
+    $('.login-form-para').removeClass('active-form-para');
+    $('.login-form-para[data-id = "' + formId + '"]').addClass('active-form-para');
   });
   //Login Page Email Validation//
   $('.form-action-btn').on('click', function () {

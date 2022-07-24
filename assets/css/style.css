@@ -15,7 +15,18 @@ body {
     border-radius: 16px;
     height: 100% !important;
 }
-
+.login-form-title{
+    display: none;
+}
+.active-form-title{
+    display: block;
+}
+.login-form-para{
+    display: none;
+}
+.active-form-para{
+    display: block;
+}
 h2.xs-line-title.xs-line-title-alter {
     color: #041d57;
     font-size: 5em;
