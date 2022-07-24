@@ -563,7 +563,7 @@ button.btn-secondary.btn-color-alt,
 
 .btn-primary:hover:before,
 .btn-primary:hover:after {
-    background-color: #041d57
+    background-color: #7edf65 !important;
 }
 
 .btn-primary:hover {
